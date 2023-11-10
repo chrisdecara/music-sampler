@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+    }
+    * {
+    box-sizing: inherit;
+    }
+
+    body {
+        text-align: center;
+        background-image: radial-gradient(circle, #8799de, #d0aae3)
+    }
+
+    h1 {
+        margin: 1em 0 1em 0;
+        font-size: 2.5em;
+    }
+
+    #caption {
+        font-size: 1.1em;
+    }
+
+    footer {
+       margin: 1.5em 0 1.5em 0;
+       font-size: 1.1em;
+    }
+
+    #introParagraph {
+        max-width: 50ch;
+        margin: auto;
+        padding: 1.2em;
+        font-size: 1.2em;
+    }
+
+    #mainImage {
+        max-width: 100%;
+    }
+
+    #albumCollection {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+
+    #album-cover {
+        margin: 0 2em;
+    }
+
+    .player {
+        margin: 2em 0 2em 0;
+        font-size: 1.2em;
+    }
+
+    .songName {
+        background-color: #fff;
+        max-width: 20ch;
+        margin: auto;
+        text-align: center;
+    }
