@@ -7,8 +7,10 @@ function hideAll() {
       el.style.display = 'none';
     });
   }
-  
+
 hideAll();
+
+let players = document.querySelectorAll('audio');
 
 albumCovers.forEach(function(el) {
     el.onclick = (e) => {
@@ -17,26 +19,35 @@ albumCovers.forEach(function(el) {
         case 'signalsAlbumCover':
           document.querySelector('#subdivisionsPlayer')
               .style.display = 'block';
+              players.forEach(function(el) {
+                el.pause();
+                el.currentTime = 0;
+            });
           break;
         case 'movingPicturesAlbumCover':
           document.querySelector('#limelightPlayer')
               .style.display = 'block';
+              players.forEach(function(el) {
+                el.pause();
+                el.currentTime = 0;
+            });
           break;
         case '2112AlbumCover':
           document.querySelector('#aPassageToBangkokPlayer')
           .style.display = 'block';
+          players.forEach(function(el) {
+            el.pause();
+            el.currentTime = 0;
+        });
           break;
         case 'rushAlbumCover':
           document.querySelector('#workingManPlayer')
           .style.display = 'block';
+          players.forEach(function(el) {
+            el.pause();
+            el.currentTime = 0;
+        });
           break;
     }
     }
   });
-  
-let players = document.querySelectorAll('audio');
-players.forEach(function(el) {
-    el.pause();
-    el.currentTime = 0;
-});
-  
