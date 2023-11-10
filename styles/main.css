@@ -13,6 +13,7 @@
     h1 {
         margin: auto;
         background-color: #8799de;
+        padding: .2em;
         border-radius: 30px;
         max-width: 30ch;
         font-size: 2.5em;
