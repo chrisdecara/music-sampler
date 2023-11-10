@@ -11,12 +11,21 @@
     }
 
     h1 {
-        margin: 1em 0 1em 0;
+        margin: auto;
+        background-color: #8799de;
+        border-radius: 30px;
+        max-width: 30ch;
         font-size: 2.5em;
+    }
+
+    #centerMe {
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 
     #caption {
         font-size: 1.1em;
+        margin-bottom: 1.2em;
     }
 
     footer {
@@ -40,11 +49,12 @@
     margin-top: 2em;
     display: flex;
     justify-content: space-evenly;
+    gap: .75em;
     flex-wrap: wrap;
     }
 
     .player {
-        margin: 2em 0 2em 0;
+        margin: 2em 0;
         font-size: 1.2em;
     }
 
@@ -56,3 +66,25 @@
         margin: auto;
         text-align: center;
     }
+
+@media screen and (max-width: 630px) {
+    body {
+        margin: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: .9em;
+    }
+
+    #caption, footer {
+        font-size: 1em;
+    }
+
+    .player {
+        margin: 1em 0;
+    }
+}
