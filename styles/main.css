@@ -1,4 +1,4 @@
-html {
+    html {
     box-sizing: border-box;
     }
     * {
@@ -27,8 +27,9 @@ html {
     #introParagraph {
         max-width: 50ch;
         margin: auto;
-        padding: 1.2em;
+        padding: 1.2em 1em;
         font-size: 1.2em;
+        background-color: #fff;
     }
 
     #mainImage {
@@ -36,13 +37,10 @@ html {
     }
 
     #albumCollection {
+    margin-top: 2em;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    }
-
-    #album-cover {
-        margin: 0 2em;
     }
 
     .player {
@@ -52,6 +50,8 @@ html {
 
     .songName {
         background-color: #fff;
+        border-radius: 30px;
+        padding: .5em 0;
         max-width: 20ch;
         margin: auto;
         text-align: center;
